@@ -31,5 +31,5 @@ console.log(':::: RESULT :::::', result);
 ```
 
 # Example ( for web )
-See [fiddle]{https://jsfiddle.net/sikirumoshood/c3495u8d/201/}
+See https://jsfiddle.net/sikirumoshood/c3495u8d/201/
 
