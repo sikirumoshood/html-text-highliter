@@ -4,7 +4,7 @@ This is a lightweight library that helps you highlight selected text from an htm
 
 See it in action...
 
-![here](https://res.cloudinary.com/offbox/image/upload/v1624734193/html-text-highlighter_lgrtp6.gif)
+![here](demo.gif)
 
 ### Example ( for node project )
 
