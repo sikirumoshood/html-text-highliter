@@ -1,10 +1,3 @@
-# How do we know what group of texts have a particular hightlight color?
-> Create a map where every hightlight revisionHistory list is mapped to a color
-> That way if a color is change, we can easily find all the nodes having IDs in the revisionHistory and update them to the new color
-
-# How do we know if we have a partial selection ?
-Partial selections currently do not have any effect the current algorithm as we always strip of the start and closing tags
-of every search text just to get rid of cases where the Range API automatically adds a closing tag to correct the DocumentFragment.
 
 # Example ( for node project )
 
