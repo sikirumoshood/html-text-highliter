@@ -6,9 +6,10 @@
 Partial selections currently do not have any effect the current algorithm as we always strip of the start and closing tags
 of every search text just to get rid of cases where the Range API automatically adds a closing tag to correct the DocumentFragment.
 
-# Example
+# Example ( for node project )
 
-```const Parser = require('./parser');
+```
+const Parser = require('./parser');
 const htmlText = `<div class = 'content' id="content">
       <h1>
           This is <b>Magic!</b>
@@ -32,5 +33,10 @@ const searchText = `<h1><b>Magic!</b>
 
 const searchTextParser = new Parser(htmlText, searchText, { prefix: 'volley-id-'});
 const result = searchTextParser.parse();
-console.log(':::: RESULT :::::', result);```
+console.log(':::: RESULT :::::', result);
+
+```
+
+# Example ( for web )
+See [fiddle]{https://jsfiddle.net/sikirumoshood/c3495u8d/201/}
 
