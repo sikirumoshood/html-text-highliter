@@ -27,17 +27,17 @@ class StringUtility {
     }
 
     static RemoveFirstOpeningTag(searchText) {
-        const { startTagIndex, endTagIndex, searchText: newSearchText } = StringUtility.lookupForIndexesForTheNextOpeningTag(searchText);
+        const { searchText: newSearchText } = StringUtility.lookupForIndexesForTheNextOpeningTag(searchText);
         
         if(newSearchText[0] === StringUtility.CharList().LESS_THAN_CHAR) {
-        		return StringUtility.RemoveFirstOpeningTag(newSearchText);
+        	return StringUtility.RemoveFirstOpeningTag(newSearchText);
         }else{
             return newSearchText;
         }
     }
     
     static lookupForIndexesForTheNextOpeningTag(searchText) {
-    		let startTagIndex;
+    	let startTagIndex;
         let endTagIndex;
         let startTagSeen = false;
 
@@ -59,7 +59,7 @@ class StringUtility {
     }
     
     static lookupForIndexesForTheNextClosingTag(searchText, startIndex = null) {
-    		let startTagIndex;
+    	let startTagIndex;
         let endTagIndex;
         let endTagSeen = false;
         
@@ -84,7 +84,7 @@ class StringUtility {
         const { startTagIndex, searchText: newSearchText } = StringUtility.lookupForIndexesForTheNextClosingTag(searchText, startIndex);
         
         if(searchText[startTagIndex - 1] === StringUtility.CharList().GREATER_THAN_CHAR) {
-        		return StringUtility.RemoveLastClosingTag(newSearchText, startTagIndex - 1);
+        	return StringUtility.RemoveLastClosingTag(newSearchText, startTagIndex - 1);
         }else{
         	return newSearchText;
         }
