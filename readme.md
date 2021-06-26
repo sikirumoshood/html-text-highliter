@@ -1,5 +1,12 @@
 
-# Example ( for node project )
+### What is html-text-highliter ?
+This is a lightweight library that helps you highlight selected text from an html page. Gives you the updated DOM which you can then use to replace the existing one. 
+
+See it in action...
+
+![here](https://res.cloudinary.com/offbox/image/upload/v1624734193/html-text-highlighter_lgrtp6.gif)
+
+### Example ( for node project )
 
 ```javascript
 const Parser = require('./parser');
@@ -30,6 +37,6 @@ console.log(':::: RESULT :::::', result);
 
 ```
 
-# Example ( for web )
+### Example ( for web )
 See https://jsfiddle.net/sikirumoshood/c3495u8d/201/
 
