@@ -1,7 +1,7 @@
 
 # Example ( for node project )
 
-```
+```javascript
 const Parser = require('./parser');
 const htmlText = `<div class = 'content' id="content">
       <h1>
